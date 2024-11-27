@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": true,
+    "givenName": {
+      "@value": "FunnelAmp"
+    },
+    "motivations": {
+      "@value": "I have over 15 years of marketing experience, specifically working with tech brands. I want to represent the interest of those who want to vote for strong marketing and promotion actions that support Cardano becoming a more widely recognized and adopted blockchain."
+    },
+    "objectives": {
+      "@value": "I want to advocate for initiatives that help Cardano become more widely used and recognized as premier blockchain and infrastructure technology."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9q4jgz4gj9w6gmlg58xu0s5n06zdmx2wlzuws407nah44mw39eqd3leysssdfkdd7jswwpmp0zzr6lj8ch9tnzgp0zsc2n69c"
+    },
+    "qualifications": {
+      "@value": "- Cardano supporter and chain participant since 2018\n- Member of Intersect MBO\n- Contributor to the Intersect Marketing Working Group"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Agency Website"
+        },
+        "uri": {
+          "@value": "https://funnelamp.com/cardano/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn Profile"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/funnelamp/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Drep Identity Link"
+        },
+        "uri": {
+          "@value": "https://funnelamp.com/cardano/drep"
+        }
+      }
+    ]
+  }
+}
